@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>Acerca de las Cookies</title>
+  <meta name="description" content="Proyecto artinkoo">
+  <meta name="author" content="FranAragon">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="../images/ojocamaleon.png">
+  <link rel="stylesheet" href="../css/styles.css">
+  <script src="../js/script.js" language="javascript" type="text/javascript"></script>
+  <script src="../js/jquery-3.6.0.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <!--CABECERA-->
+  <header>
+    <div id="menu">
+      <input id="hamburguer-icon" type="checkbox" />
+      <label for="hamburguer-icon">
+        <span class="hamburguer-line"></span>
+        <span class="hamburguer-line"></span>
+        <span class="hamburguer-line"></span>
+      </label>
+      <ul id="menuOculto">
+        <li>
+          <img alt="lupa" src="../images/search_magnifying_glass_icon_149392.svg" />
+          <input type="text" id="buscar" name="buscar" placeholder="Encuentra lo que buscas">
+          <hr />
+        </li>
+        <li> <a href="productos.html">Productos</a></li>
+        <li> <a href="personalizacion.html">Personalización</a></li>
+        <li> <a href="aloju.html">ALOJÚ</a></li>
+        <li> <a href="contacto.html">Contáctanos</a></li>
+      </ul>
+    </div>
+
+    <div id="logoCabecera">
+      <a href="../index.html"><img alt="logoColor" src="../images/logotipo_en_color.png" /></a>
+    </div>
+
+    <div id='menu_query'>
+      <p id='productos_menu_query'><a href="productos.html">Productos</a></p>
+      <p id='personalizacion_menu_query'><a href="personalizacion.html">Personalización</a></p>
+      <p id='aloju_menu_query'><a href="aloju.html">ALOJÚ</a></p>
+      <p id='contactanos_menu_query'><a href="contacto.html">Contáctanos</a></p>
+    </div>
+
+    <div id="derecha">
+      <img alt="lupa" src="../images/search_magnifying_glass_icon_149392.svg" />
+      <input id="idioma" type="checkbox" />
+      <label for="idioma">
+        <img alt="globoIdioma" src="../images/-language_89801.svg" />
+        <img alt="idiomaIngles" id="english" src="../images/icons8-gran-bretana-48.png" />
+      </label>
+
+      <div id="bolsaCompra">
+        <a href="#"><img id='icono_bolsaCompra' alt="compra"
+            src="../images/shopping-bag_icon-icons.com_69305.svg" /></a>
+        <div>
+          <p></p>
+        </div>
+      </div>
+      <div id='menu_oculto_bolsa'>
+        <div id='cerrar_menu_bolsa'>
+          <picture>
+            <img id='icono_cerrar_bolsa' alt='cerrar' src='../images/cross-symbol_icon-icons.com_74149.png' />
+          </picture>
+          <p id='cerrar_bolsa'>CERRAR</p>
+        </div>
+        <div id='contenido_menu_compra'>
+          <p>CARRITO DE COMPRA</p>
+          <hr />
+          <div id='contenido_compra'>
+            <picture>
+              <img src="../images/nodisponible.png" alt="Imagen No Disponible" />
+            </picture>
+            <p id='nombre_producto'>Nombre producto</p>
+            <p id='precio_producto'>1 x 26.65€</p>
+            <picture>
+              <img id='eliminar_producto' alt='eliminar_producto'
+                src='../images/cross-symbol_icon-icons.com_74149.png' />
+            </picture>
+          </div>
+          <hr />
+          <button id='comprar_desde_menu'>COMPRAR</button>
+          <button id='ver_carrito'>VER CARRITO</button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--CUERPO DE LA PÁGINA-->
+  <main>
+
+    <p id='titutlo_paginas_legales'>ACERCA DE LAS COOKIES</p>
+
+    <p id='parrafo_paginas_legales'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+      Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+      type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+      into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+      Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+      PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting
+      industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+      took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but
+      also the leap into electronic typesetting, remaining essentially unchanged. </p>
+  </main>
+  <!--PIE DE PÁGINA-->
+  <footer>
+    <div id="newsletter">
+      <h1>SUBSCRÍBETE A NUESTRA REVISTA</h1>
+      <form>
+        <input required type="email" pattern="[^ @]*@[^ @]*" placeholder="Introduzca su email">
+        <button type="submit" id="botonEnviar">Enviar</button>
+      </form>
+    </div>
+    <hr id="email" />
+
+    <ul id="menuPiePagina">
+      <li>
+        <a href="#">Sobre Nosotros</a>
+        <input type="checkbox" id="submenu1">
+        <label for="submenu1">+</label>
+        <ul>
+          <li><a href="quienes_somos.html">¿Quiénes somos?</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Legal</a>
+        <input type="checkbox" id="submenu2">
+        <label for="submenu2">+</label>
+        <ul>
+          <li><a href="politica_privacidad.html">Política de Privacidad</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Servicio al cliente</a>
+        <input type="checkbox" id="submenu3">
+        <label for="submenu3">+</label>
+        <ul>
+          <li><a href="contacto.html">Contáctanos</a></li>
+          <li><a href="envios_devoluciones.html">Envíos y Devoluciones</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <div id="redes_sociales">
+      <h1>SÍGUENOS EN REDES SOCIALES</h1>
+      <a target="_blank" href="https://www.facebook.com"><img alt="facebook"
+          src="../images/Facebook_Rounded_Solid_icon-icons.com_61562.png" /></a>
+      <a target="_blank" href="https://www.twitter.com"><img alt="twitter"
+          src="../images/Twitter_Rounded_Solid_icon-icons.com_61561.png" /></a>
+      <a target="_blank" href="https://www.instagram.com"><img alt="instagram"
+          src="../images/Instagram_Rounded_Solid_icon-icons.com_61560.png" /></a>
+    </div>
+
+    <p>
+      <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+          src="//jigsaw.w3.org/css-validator/images/vcss-blue"
+          alt="¡CSS Válido!" />
+      </a>
+    </p>
+    
+    <div id="pie">
+      <p>© 2020 artinkoo &bull; Todos los Derechos Reservados</p>
+    </div>
+
+  </footer>
+</body>
+
+</html>

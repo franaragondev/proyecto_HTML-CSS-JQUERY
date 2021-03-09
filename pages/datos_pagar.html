@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>Pagar</title>
+  <meta name="description" content="Proyecto artinkoo">
+  <meta name="author" content="FranAragon">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <link rel="icon" type="image/png" href="../images/ojocamaleon.png">
+  <script src="../js/script.js" language="javascript" type="text/javascript"></script>
+  <script src="../js/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="../css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <!--CABECERA-->
+  <header>
+    <div id="logoCabecera_solo">
+      <a href="../index.html"><img alt="logoColor" src="../images/logotipo_en_color.png" /></a>
+    </div>
+  </header>
+  <main>
+    <div id='total'>
+      <p id='total_texto'>TOTAL</p>
+      <p id='precio_total'>26.65€</p>
+    </div>
+
+    <div id='tabla_datos'>
+      <div id='datos_contacto'>
+        <p>Contacto</p>
+        <p id='cambiar_datos'>Cambiar</p>
+        <p>direcciondecorreo@gmail.com</p>
+      </div>
+      <div id='datos_contacto'>
+        <p>Dirección</p>
+        <p id='cambiar_datos'>Cambiar</p>
+        <p>dirección de envío</p>
+      </div>
+      <div id='datos_envio'>
+        <p>Método</p>
+        <p>Método de envío 3.50€</p>
+      </div>
+    </div>
+
+    <p id='descuentos'>Descuentos</p>
+
+    <div id='codigo_descuento'>
+      <input placeholder="Código de Descuento" />
+      <picture>
+        <img src='../images/boton_flecha.png' />
+      </picture>
+    </div>
+
+    <p id='info_encriptadas'>Todas las transacciones están ecriptadas y son seguras</p>
+
+    <div id='contenedor_tarjeta'>
+      <div id='imagenes_tarjeta'>
+        <p>Tarjeta de crédito</p>
+        <picture>
+          <img alt='visa_icon' src='../images/Visa_icon-icons.com_60549.svg' />
+        </picture>
+        <picture>
+          <img alt='mastercard_icon' src='../images/Mastercard_icon-icons.com_60554.svg' />
+        </picture>
+        <picture>
+          <img alt='amex_icon' id='amex' src='../images/amex_82052.png' />
+        </picture>
+      </div>
+      <div id='info_tarjeta'>
+        <div id='numero_tarjeta'>
+          <input placeholder="Número de Tarjeta" />
+        </div>
+        <div id='nombre_tarjeta'>
+          <input placeholder="Nombre del Titular" />
+        </div>
+        <div id='caducidad_tarjeta'>
+          <input placeholder="Fecha de Caducidad (MM/YY)" />
+        </div>
+        <div id='codigo_tarjeta'>
+          <input placeholder="Código de Seguridad" />
+        </div>
+      </div>
+    </div>
+    <button id='pagar'>PAGAR</button>
+    <p id='volver_envios'>< Volver a envíos</p> 
+  </main> 
+  <!--PIE DE PÁGINA-->
+        <footer>
+          <div id="contacto">
+            <h1>CONTÁCTANOS</h1>
+            <p>Para cualquier consulta, envíanos un correo electrónico:</p>
+            <a href="mailto:franaragondeveloper@gmail.com?Subject=Solicitar%20Información">
+              <p>info@artinkoo.com</p>
+            </a>
+          </div>
+          <hr />
+
+          <div id="newsletter">
+            <h1>SUBSCRÍBETE A NUESTRA REVISTA</h1>
+            <form>
+              <input required type="email" pattern="[^ @]*@[^ @]*" placeholder="Introduzca su email">
+              <button type="submit" id="botonEnviar">Enviar</button>
+            </form>
+          </div>
+          <hr />
+
+          <ul id="menuPiePagina">
+            <li>
+              <a href="#">Sobre Nosotros</a>
+              <input type="checkbox" id="submenu1">
+              <label for="submenu1">+</label>
+              <ul>
+                <li><a href="#">¿Quiénes somos?</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Legal</a>
+              <input type="checkbox" id="submenu2">
+              <label for="submenu2">+</label>
+              <ul>
+                <li><a href="#">Política de Privacidad</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Servicio al cliente</a>
+              <input type="checkbox" id="submenu3">
+              <label for="submenu3">+</label>
+              <ul>
+                <li><a href="pages/contacto.html">Contáctanos</a></li>
+                <li><a href="#">Envíos y Devoluciones</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <div id="redes_sociales">
+            <h1>SÍGUENOS EN REDES SOCIALES</h1>
+            <a target="_blank" href="https://www.facebook.com"><img alt="facebook"
+                src="../images/Facebook_Rounded_Solid_icon-icons.com_61562.png" /></a>
+            <a target="_blank" href="https://www.twitter.com"><img alt="twitter"
+                src="../images/Twitter_Rounded_Solid_icon-icons.com_61561.png" /></a>
+            <a target="_blank" href="https://www.instagram.com"><img alt="instagram"
+                src="../images/Instagram_Rounded_Solid_icon-icons.com_61560.png" /></a>
+          </div>
+
+          <p>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+              <img style="border:0;width:88px;height:31px"
+                src="//jigsaw.w3.org/css-validator/images/vcss-blue"
+                alt="¡CSS Válido!" />
+            </a>
+          </p>
+
+          <div id="pie">
+            <p>© 2020 artinkoo &bull; Todos los Derechos Reservados</p>
+          </div>
+
+        </footer>
+</body>
+
+</html>

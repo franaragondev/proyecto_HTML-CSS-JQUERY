@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>Home</title>
+  <meta name="description" content="Proyecto artinkoo">
+  <meta name="author" content="FranAragon">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="images/ojocamaleon.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body onload="existe_cookies();">
+  <!--CABECERA-->
+  <header>
+    <div id="menu">
+      <input id="hamburguer-icon" type="checkbox" />
+      <label for="hamburguer-icon">
+        <span class="hamburguer-line"></span>
+        <span class="hamburguer-line"></span>
+        <span class="hamburguer-line"></span>
+      </label>
+      <ul id="menuOculto">
+        <li>
+          <img alt="lupa" src="../images/search_magnifying_glass_icon_149392.svg" />
+          <input type="text" id="buscar" name="buscar" placeholder="Encuentra lo que buscas">
+          <hr />
+        </li>
+        <li> <a href="pages/productos.html">Productos</a></li>
+        <li> <a href="pages/personalizacion.html">Personalización</a></li>
+        <li> <a href="pages/aloju.html">ALOJÚ</a></li>
+        <li> <a href="pages/contacto.html">Contáctanos</a></li>
+      </ul>
+    </div>
+
+    <div id="logoCabecera">
+      <a href="index.html"><img alt="logoColor" src="../images/logotipo_en_color.png" /></a>
+    </div>
+
+    <div id='menu_query'>
+      <p id='productos_menu_query'><a href="pages/productos.html">Productos</a></p>
+      <p id='personalizacion_menu_query'><a href="pages/personalizacion.html">Personalización</a></p>
+      <p id='aloju_menu_query'><a href="pages/aloju.html">ALOJÚ</a></p>
+      <p id='contactanos_menu_query'><a href="pages/contacto.html">Contáctanos</a></p>
+    </div>
+
+    <div id="derecha">
+      <img alt="lupa" src="../images/search_magnifying_glass_icon_149392.svg" />
+      <input id="idioma" type="checkbox" />
+      <label for="idioma">
+        <img alt="globoIdioma" src="../images/-language_89801.svg" />
+        <img alt="idiomaIngles" id="english" src="../images/icons8-gran-bretana-48.png" />
+      </label>
+
+      <div id="bolsaCompra">
+        <a href="#"><img id='icono_bolsaCompra' alt="compra"
+            src="../images/shopping-bag_icon-icons.com_69305.svg" /></a>
+        <div>
+          <p></p>
+        </div>
+      </div>
+      <div id='menu_oculto_bolsa'>
+        <div id='cerrar_menu_bolsa'>
+          <picture>
+            <img id='icono_cerrar_bolsa' alt='cerrar' src='../images/cross-symbol_icon-icons.com_74149.png' />
+          </picture>
+          <p id='cerrar_bolsa'>CERRAR</p>
+        </div>
+        <div id='contenido_menu_compra'>
+          <p>CARRITO DE COMPRA</p>
+          <hr />
+          <div id='contenido_compra'>
+            <picture>
+              <img src="images/nodisponible.png" alt="Imagen No Disponible" />
+            </picture>
+            <p id='nombre_producto'>Nombre producto</p>
+            <p id='precio_producto'>1 x 26.65€</p>
+            <picture>
+              <img id='eliminar_producto' alt='eliminar_producto'
+                src='../images/cross-symbol_icon-icons.com_74149.png' />
+            </picture>
+          </div>
+          <hr />
+          <button id='comprar_desde_menu'>COMPRAR</button>
+          <button id='ver_carrito'>VER CARRITO</button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <!--CARRUSEL DE IMÁGENES-->
+    <section id="carrusel">
+      <!--Contenedor del slider-->
+      <section id="slider" class="contenedor-slider">
+        <ul class="slider-wrapper">
+          <li class="current-slide">
+            <img src="images/carousel1Recortado.png" width="640" height="419" alt="carrusel1">
+          </li>
+
+          <li>
+            <img src="images/alojuCabecera.jpg" alt="carrusel2">
+          </li>
+
+          <li>
+            <img src="images/pexels-guy-kawasaki-1654498.jpg" alt="carrusel3">
+          </li>
+
+          <li>
+            <img src="images/pexels-pixabay-416676.jpg" alt="carrusel4">
+          </li>
+        </ul>
+      </section>
+    </section>
+    <!--MÁS VENDIDOS-->
+    <section id="masVendidos">
+      <div id="tituloVendidos">
+        <hr>
+        <h2>LO MÁS VENDIDO</h2>
+        <hr>
+      </div>
+      <article>
+        <a href="pages/pagina_producto.html">
+          <picture><img src="images/nodisponible.png" alt="Imagen No Disponible" /></picture>
+        </a>
+        <h4>Producto 1 | 15.95€</h4>
+        <a href="pages/pagina_producto.html"><span>AÑADIR A LA CESTA</span><i class="fas fa-shopping-cart"></i></a>
+      </article>
+      <article>
+        <a href="pages/pagina_producto.html">
+          <picture><img src="images/nodisponible.png" alt="Imagen No Disponible" /></picture>
+        </a>
+        <h4>Producto 2 | 10.95€</h4>
+        <a href="pages/pagina_producto.html"><span>AÑADIR A LA CESTA</span><i class="fas fa-shopping-cart"></i></a>
+      </article>
+      <article>
+        <a href="pages/pagina_producto.html">
+          <picture><img src="images/nodisponible.png" alt="Imagen No Disponible" /></picture>
+        </a>
+        <h4>Producto 3 | 20.95€</h4>
+        <a href="pages/pagina_producto.html"><span>AÑADIR A LA CESTA</span><i class="fas fa-shopping-cart"></i></a>
+      </article>
+      <article>
+        <a href="pages/pagina_producto.html">
+          <picture><img src="images/nodisponible.png" alt="Imagen No Disponible" /></picture>
+        </a>
+        <h4>Producto 4 | 16.95€</h4>
+        <a href="pages/pagina_producto.html"><span>AÑADIR A LA CESTA</span><i class="fas fa-shopping-cart"></i></a>
+      </article>
+      <article>
+        <a href="pages/pagina_producto.html">
+          <picture><img src="images/nodisponible.png" alt="Imagen No Disponible" /></picture>
+        </a>
+        <h4>Producto 5 | 15.95€</h4>
+        <a href="pages/pagina_producto.html"><span>AÑADIR A LA CESTA</span><i class="fas fa-shopping-cart"></i></a>
+      </article>
+      <article>
+        <a href="pages/pagina_producto.html">
+          <picture><img src="images/nodisponible.png" alt="Imagen No Disponible" /></picture>
+        </a>
+        <h4>Producto 6 | 10.95€</h4>
+        <a href="pages/pagina_producto.html"><span>AÑADIR A LA CESTA</span><i class="fas fa-shopping-cart"></i></a>
+      </article>
+      <button id="mostrarMasVendidos">MOSTRAR MÁS</button>
+    </section>
+
+    <!--PUBLICIDAD ALOJÚ-->
+    <div id='publicidad_query'>
+      <section id="alojuPublicidad">
+        <picture><img src="images/alojuhomemobiledesign.png" alt="alojú" /></picture>
+        <button onclick="window.location='https://artinkoo.000webhostapp.com/pages/aloju.html'" id="descubrirMas">DESCUBRIR MÁS</button>
+      </section>
+
+      <section id="coloreaPublicidad">
+        <picture><img src="images/colorea_la_vida.jpg" alt="colorea_la_vida" /></picture>
+        <button onclick="window.location='https://artinkoo.000webhostapp.com/pages/personalizacion.html'" id="descubrirMas">DESCUBRIR MÁS</button>
+      </section>
+    </div>
+
+    <video id="contenedor">
+      <source src="images/videoPromo.mp4">
+      </source>
+      <source src="images/videoPromo.webm">
+      </source>
+    </video>
+
+    <div id="menu_video">
+      <div id="izquierda">
+        <a href="javascript:play();ocultar_play();mostrar_pause();">
+          <picture><img id="start" src="images/1486348532-music-play-pause-control-go-arrow_80458.svg" /></picture>
+        </a>
+
+        <a href="javascript:pause();ocultar_pause();mostrar_play();">
+          <picture><img id="pause" src="images/1486348534-music-pause-stop-control-play_80459.svg" /></picture>
+        </a>
+
+        <a href="javascript:stop();ocultar_pause();mostrar_play();">
+          <picture><img id="stop" src="images/1486348535-music-square-stop-play-pause_80450.svg" /></picture>
+        </a>
+
+        <a href="javascript:back();">
+          <picture><img id="back" src="images/restart_icon_135251.svg" /></picture>
+        </a>
+        <a href="javascript:advance();">
+          <picture><img id="advance" src="images/restart_icon_135251.svg" /></picture>
+        </a>
+      </div>
+      <div id="derecha">
+
+        <picture> <img id="mute" src="images/speaker-volume-increase_icon-icons.com_48440.png" /></picture>
+
+        <picture><img id="subir_volumen" src="images/volume-up-interface-symbol_icon-icons.com_73337.svg" /></picture>
+
+        <picture><input type="range" id="volume" min="0" max="9" value="0" step="1" oninput="volume()"></picture>
+
+      </div>
+
+      <a href="javascript:full_screen();">
+        <picture><img id="pantalla_completa" src="images/fullscreen_icon_178680.svg" /></picture>
+      </a>
+    </div>
+
+
+    <!--MÁS PERSONALIZADO-->
+    <section id="masPersonalizado">
+      <div id="tituloPersonalizado">
+        <hr>
+        <h2>LO MÁS PERSONALIZADO</h2>
+        <hr>
+      </div>
+      <article>
+        <a href="pages/pagina_producto.html">
+          <picture><img src="images/nodisponible.png" alt="Imagen No Disponible" /></picture>
+        </a>
+        <h4>Producto 1 | 15.95€</h4>
+        <a href="pages/pagina_producto.html"><span>AÑADIR A LA CESTA</span><i class="fas fa-shopping-cart"></i></a>
+      </article>
+      <article>
+        <a href="pages/pagina_producto.html">
+          <picture><img src="images/nodisponible.png" alt="Imagen No Disponible" /></picture>
+        </a>
+        <h4>Producto 2 | 10.95€</h4>
+        <a href="pages/pagina_producto.html"><span>AÑADIR A LA CESTA</span><i class="fas fa-shopping-cart"></i></a>
+      </article>
+      <article>
+        <a href="pages/pagina_producto.html">
+          <picture><img src="images/nodisponible.png" alt="Imagen No Disponible" /></picture>
+        </a>
+        <h4>Producto 3 | 20.95€</h4>
+        <a href="pages/pagina_producto.html"><span>AÑADIR A LA CESTA</span><i class="fas fa-shopping-cart"></i></a>
+      </article>
+      <article>
+        <a href="pages/pagina_producto.html">
+          <picture><img src="images/nodisponible.png" alt="Imagen No Disponible" /></picture>
+        </a>
+        <h4>Producto 4 | 16.95€</h4>
+        <a href="pages/pagina_producto.html"><span>AÑADIR A LA CESTA</span><i class="fas fa-shopping-cart"></i></a>
+      </article>
+      <article>
+        <a href="pages/pagina_producto.html">
+          <picture><img src="images/nodisponible.png" alt="Imagen No Disponible" /></picture>
+        </a>
+        <h4>Producto 5 | 15.95€</h4>
+        <a href="pages/pagina_producto.html"><span>AÑADIR A LA CESTA</span><i class="fas fa-shopping-cart"></i></a>
+      </article>
+      <article>
+        <a href="pages/pagina_producto.html">
+          <picture><img src="images/nodisponible.png" alt="Imagen No Disponible" /></picture>
+        </a>
+        <h4>Producto 6 | 10.95€</h4>
+        <a href="pages/pagina_producto.html"><span>AÑADIR A LA CESTA</span><i class="fas fa-shopping-cart"></i></a>
+      </article>
+      <button id="mostrarMasPersonalizado">MOSTRAR MÁS</button>
+    </section>
+  </main>
+  <!--PIE DE PÁGINA-->
+  <footer>
+    <div id="contacto">
+      <h1>CONTÁCTANOS</h1>
+      <p>Para cualquier consulta, envíanos un correo electrónico:</p>
+      <a href="mailto:franaragondeveloper@gmail.com?Subject=Solicitar%20Información">
+        <p>info@artinkoo.com</p>
+      </a>
+    </div>
+    <hr />
+
+    <div id="newsletter">
+      <h1>SUBSCRÍBETE A NUESTRA REVISTA</h1>
+      <form>
+        <input required type="email" pattern="[^ @]*@[^ @]*" placeholder="Introduzca su email">
+        <button type="submit" id="botonEnviar">Enviar</button>
+      </form>
+    </div>
+    <hr />
+
+    <ul id="menuPiePagina">
+      <li>
+        <a href="#">Sobre Nosotros</a>
+        <input type="checkbox" id="submenu1">
+        <label for="submenu1">+</label>
+        <ul>
+          <li><a href="pages/quienes_somos.html">¿Quiénes somos?</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Legal</a>
+        <input type="checkbox" id="submenu2">
+        <label for="submenu2">+</label>
+        <ul>
+          <li><a href="pages/politica_privacidad.html">Política de Privacidad</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Servicio al cliente</a>
+        <input type="checkbox" id="submenu3">
+        <label for="submenu3">+</label>
+        <ul>
+          <li><a href="pages/contacto.html">Contáctanos</a></li>
+          <li><a href="#">Envíos y Devoluciones</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <div id="redes_sociales">
+      <h1>SÍGUENOS EN REDES SOCIALES</h1>
+      <a target="_blank" href="https://www.facebook.com"><img alt="facebook"
+          src="images/Facebook_Rounded_Solid_icon-icons.com_61562.png" /></a>
+      <a target="_blank" href="https://www.twitter.com"><img alt="twitter"
+          src="images/Twitter_Rounded_Solid_icon-icons.com_61561.png" /></a>
+      <a target="_blank" href="https://www.instagram.com"><img alt="instagram"
+          src="images/Instagram_Rounded_Solid_icon-icons.com_61560.png" /></a>
+    </div>
+
+    <p>
+      <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+          src="//jigsaw.w3.org/css-validator/images/vcss-blue"
+          alt="¡CSS Válido!" />
+      </a>
+    </p>
+
+    <div id="pie">
+      <p>© 2020 artinkoo &bull; Todos los Derechos Reservados</p>
+    </div>
+
+  </footer>
+
+  <!--COOKIES-->
+  <div id="cookies">
+    <div id="texto">
+      <p>Este sitio web utiliza cookies para ofrecerte la mejor experiencia en nuestra web. <a
+          href='pages/cookies.html'>Leer Más</a></p>
+    </div>
+    <div id="botones_cookies">
+      <button id="configurar" onclick="ocultar_cookies();">CONFIGURAR</button>
+      <button id="aceptar" onclick="ocultar_cookies();">ACEPTAR TODAS</button>
+    </div>
+  </div>
+</body>
+<script src="js/script.js" language="javascript" type="text/javascript"></script>
+
+</html>
