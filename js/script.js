@@ -158,7 +158,7 @@ $(document).ready(function () {
     })
 
     $('#continuar_comprando').click(function(){
-        $(window).attr('location', 'index.html')
+        $(window).attr('location', '../index.html')
     })
 
     $('#comprar_desde_cesta').click(function(){
